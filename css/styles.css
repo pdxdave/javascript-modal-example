@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+}
+
+.header-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+}
+
+.nav-main {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-main li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav-main a {
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: #000;
+    transition: .25s color;
+}
+.nav-main a:hover {
+    color: red;
+}
+
+@media only screen and (min-width: 724px) {
+    .header-title h1 {
+        font-size: 4rem;
+    }
+  }
